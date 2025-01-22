@@ -11,7 +11,7 @@ author:
 acknowledgment: "This collection of SPARQL examples builds on the sparql-examples repository provided by [SIB ](https://github.com/SIB-Swiss)."
 ---
 
-# ERDERA SPARQL Examples
+# Delta Tissue Leap SPARQL Examples
 
 We collect the SPARQL examples in different formats,  
 for different projects within ERDERA.
