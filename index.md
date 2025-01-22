@@ -18,7 +18,7 @@ for different projects within ERDERA.
 
 On this GitHub Pages site, we have an HTML rendering for all of them.
 
- * [ORPHANET](./examples/ORPHANET/)
+ * [TB](./examples/TB/)
 
 ---
 
