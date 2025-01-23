@@ -1,0 +1,22 @@
+@prefix ex: <https://www.bgee.org/sparql/.well-known/sparql-examples/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix ordo:<http://www.orpha.net/ORDO/> .
+@prefix w3: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:001 a sh:SPARQLExecutable,
+        sh:SPARQLSelectExecutable ;
+    rdfs:comment "List cellular states and survival"@en ;
+    sh:prefixes _:sparql_examples_prefixes ;
+    sh:select """PREFIX ns1: <https://dtdr.sdsc.edu/dev/vocab/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?survival (COUNT(?entity) AS ?count)
+WHERE {
+  ?entity ns1:survival ?survival .
+}
+GROUP BY ?survival
+ORDER BY ?survival """ ;
+    schema:target <http://localhost:7200/sparql> .
+
